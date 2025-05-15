@@ -1,0 +1,34 @@
+[
+    {
+      "name": "Jordan 4",
+      "description": "Chaussure iconique alliant style urbain et confort ultime.",
+      "specifications": {
+        "color": "noir/blanc",
+        "size_range": [38, 47],
+        "material": "cuir synthétique",
+        "price": 120
+      },
+      "tags": ["chaussure", "streetwear", "sneakers", "nouveauté"]
+    },
+    {
+      "name": "Hoodie Urban Vibes",
+      "description": "Sweat à capuche en coton bio, coupe oversize, idéal pour l’hiver.",
+      "specifications": {
+        "colors_available": ["gris", "noir", "blanc"],
+        "material": "coton bio",
+        "price": 70
+      },
+      "tags": ["hoodie", "streetwear", "coton bio", "oversize"]
+    },
+    {
+      "name": "Casquette rouge",
+      "description": "Casquette ajustable avec logo brodé, un must-have.",
+      "specifications": {
+        "colors_available": ["rouge", "noir", "bleu marine"],
+        "material": "polyester",
+        "price": 30
+      },
+      "tags": ["casquette", "accessoire", "streetwear"]
+    }
+  ]
+  
