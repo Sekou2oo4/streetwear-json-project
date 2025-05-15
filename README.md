@@ -1,72 +1,71 @@
-Projet Streetwear JSON API - Digital Ecosystem (DES)
+Streetwear JSON API Project – Digital Ecosystem (DES)
 
-Présentation du projet
+Project Overview
 
-Dans le cadre de notre cours Digital Ecosystem (DES), nous avons réalisé un projet qui consiste à créer une API JSON personnalisée hébergée sur GitHub Pages, puis à développer un script Python capable de récupérer et d’afficher ces données.
+As part of our Digital Ecosystem (DES) course, we completed a project that involved creating a custom JSON API hosted on GitHub Pages, and then developing a Python script to fetch and display this data.
 
-Nous avons choisi comme thème une marque de streetwear, qui nous permet d’aborder des notions liées à la gestion de données, l’utilisation d’API, et l’hébergement web statique via GitHub Pages.
+We chose the theme of a streetwear brand, which allowed us to work on concepts related to data management, API usage, and static web hosting through GitHub Pages.
 
-Le but était d’appliquer les compétences vues en classe pour manipuler des données JSON et utiliser Python pour interagir avec des APIs externes.
+The goal was to apply the skills learned in class to manipulate JSON data and use Python to interact with external APIs.
 
-Description du projet
+Project Description
 
-Nous avons créé un fichier JSON (streetwear_data.json) contenant plusieurs objets représentant différents articles de la marque de streetwear. Chaque objet contient :
+We created a JSON file (streetwear_data.json) containing several objects representing different items from the streetwear brand. Each object includes:
 
-name : le nom de l’article (exemple : "Sneakers X")
-description : une courte description de l’article 
-specifications : un objet avec des détails techniques (couleur, taille, …)
-tags : un tableau de mots-clés liés à l’article (exemple : ["chaussures", "urbain", "confort"])
-Ces données sont ensuite hébergées publiquement sur GitHub Pages pour être accessibles via une URL.
+name: the name of the item (e.g., "Sneakers X")
+description: a short description of the item
+specifications: an object with technical details (color, size, etc.)
+tags: an array of keywords related to the item (e.g., ["shoes", "urban", "comfort"])
+This data is publicly hosted on GitHub Pages to be accessible via a URL.
 
-Fonctionnement du script Python
+How the Python Script Works
 
-Le script fetch_data.py utilise la bibliothèque Python requests pour récupérer les données JSON directement depuis l’URL GitHub Pages.
+The fetch_data.py script uses the Python requests library to fetch the JSON data directly from the GitHub Pages URL.
 
-Une fois les données téléchargées, le script les parse (les transforme en objets Python) puis affiche dans la console les informations clés de chaque article : nom, description, spécifications, et tags.
+Once downloaded, the script parses the data (converts it into Python objects) and then prints the key information of each item in the console: name, description, specifications, and tags.
 
-Le script contient aussi une gestion d’erreurs simple pour afficher un message clair si la récupération des données échoue (problème réseau, URL incorrecte…).
+The script also includes simple error handling to display a clear message if data retrieval fails (network issues, incorrect URL, etc.).
 
-Installation et utilisation
+Installation and Usage
 
-Pour utiliser ce projet, voici les étapes à suivre :
+To use this project, follow these steps:
 
-Cloner le dépôt
-Ouvrez un terminal et tapez :
+Clone the repository
+Open your terminal and type:
 git clone https://github.com/Sekou2oo4/streetwear-json-project.git
-Installer la bibliothèque requests
-Si elle n’est pas déjà installée sur votre machine, lancez :
+Install the requests library
+If it’s not already installed on your machine, run:
 pip install requests
-Lancer le script Python
-Positionnez-vous dans le dossier du projet et exécutez :
+Run the Python script
+Navigate to the project folder and execute:
 cd streetwear-json-project
 python3 fetch_data.py
-Vous verrez alors dans la console les informations de chaque article streetwear s’afficher clairement.
+You will then see the information for each streetwear item clearly displayed in the console.
 
-Organisation des fichiers
+Project File Structure
 
-Voici la structure de notre projet :
+Here is the structure of our project:
 
 streetwear-json-project/
 │
-├── fetch_data.py           # Script Python qui récupère et affiche les données JSON
-├── streetwear_data.json    # Fichier JSON contenant nos données d’articles streetwear
-├── README.md               # Documentation du projet
-Hébergement et accès aux données JSON
+├── fetch_data.py           # Python script that fetches and displays the JSON data
+├── streetwear_data.json    # JSON file containing our streetwear item data
+├── README.md               # Project documentation
+Hosting and Accessing the JSON Data
 
-Le fichier streetwear_data.json est hébergé sur GitHub Pages, ce qui permet d’y accéder via une URL publique :
+The streetwear_data.json file is hosted on GitHub Pages, making it accessible via the public URL:
 
 https://sekou2oo4.github.io/streetwear-json-project/streetwear_data.json
 
-Cette URL est utilisée par le script Python pour récupérer les données.
+This URL is used by the Python script to fetch the data.
 
-Difficultés rencontrées et solutions
+Challenges and Solutions
 
+Error handling in Python: We had to add try/except blocks to manage cases where the connection to the URL might fail.
+Hosting on GitHub Pages: We learned how to enable GitHub Pages to make our JSON file publicly accessible.
+These steps enhanced our practical understanding of collaborative tools and web development.
 
-Gestion des erreurs dans Python : Il a fallu ajouter des blocs try/except pour gérer les cas où la connexion à l’URL pourrait échouer.
-Hébergement sur GitHub Pages : Nous avons découvert comment activer GitHub Pages pour rendre notre JSON accessible publiquement.
-Ces étapes ont renforcé notre compréhension pratique des outils collaboratifs et du développement web.
-
-Membres du groupe
+Group Members
 
 Sekou Doucoure
 Dikra
