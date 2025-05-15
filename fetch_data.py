@@ -24,6 +24,6 @@ def display_items(data):
         print("-" * 40)
 
 if __name__ == "__main__":
-    url = "https://<username>.github.io/<repository-name>/custom_data.json"
+    url = " https://sekou2oo4.github.io/streetwear-json-project/streetwear_data.json"
     json_data = fetch_json_data(url)
     display_items(json_data)
